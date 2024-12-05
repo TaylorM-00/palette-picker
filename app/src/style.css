@@ -1,0 +1,4 @@
+#project-palette-picker {
+  display: grid;
+  grid-template-columns: auto;
+}
