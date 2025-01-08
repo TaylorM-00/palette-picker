@@ -12,3 +12,17 @@ uuidButton.addEventListener("click", () => {
   const newUUID = generateUUID();
   uuidText.textContent = `your new uuid is: ${newUUID}`;
 });
+
+const choose = document.getElementById("option2").defaultChecked;
+
+//
+const handleToDoFormSubmit = (event) => {
+  event.preventDefault();
+  const form = event.target;
+  const newTodo = {
+    title: form.todoTitle.value,
+  };
+  addToDoToList(newTodo);
+  form.reset();
+};
+handleToDoFormSubmit();

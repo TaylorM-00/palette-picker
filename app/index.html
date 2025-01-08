@@ -5,44 +5,58 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheey" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <h1>Palette Picker</h1>
   </body>
   <main id="project-palette-picker">
     <body>
-      <form aria-labelled="create-palette">
-        <h2 id="create-palette">Add a Palette</h2>
-        <div id="palette-name">
-          <label for="palette-title">Palette Title</label>
-          <input type="text" id="palette-title" name="palette-title" /> <br />
-          <br />
-          <label for="color1 ">Color #1</label>
-          <input type="color" id="color1" name="color1" /> <br />
-          <br />
-          <label for="color2">Color #2</label>
-          <input type="color" id="color2" name="color2" /> <br />
-          <br />
-          <label for="color3">Color #3</label>
-          <input type="color" id="color3" name="color3" /> <br />
-          <br />
-          <label for="temperature">Temperature</label>
-          <label for="option1">Warm</label>
-          <input type="checkbox" id="option1" name="option1" value="warm" />
-          <br />
-          <label for="option2">Neutral</label>
-          <input type="checkbox" id="option2" name="option2" value="neutral" />
-          <br />
-          <label for="option3">Cool</label>
-          <input type="checkbox" id="option3" name="option3" value="cool" />
-          <br /><br />
-          <button type="submit">Create the Palette</button>
-        </div>
-      </form>
+      <div id="palette-project">
+        <form aria-labelled="create-palette">
+          <fieldset>
+            <h2 id="create-palette">Add a Palette</h2>
+            <div id="palette-name">
+              <label for="palette-title">Palette Title:</label>
+              <input type="text" id="palette-title" name="palette-title" />
+              <br />
+              <br />
+              <label for="color1 ">Color #1</label>
+              <input type="color" id="color1" name="color1" /> <br />
+              <br />
+              <label for="color2">Color #2</label>
+              <input type="color" id="color2" name="color2" /> <br />
+              <br />
+              <label for="color3">Color #3</label>
+              <input type="color" id="color3" name="color3" /> <br />
+              <br />
+
+              <label for="temperature">Temperature</label>
+              <label for="warm">Warm</label>
+              <input type="radio" id="warm" name="temperature" value="warm" />
+              <br />
+              <label for="neutral">Neutral</label>
+              <input
+                type="radio"
+                id="neutral"
+                name="temperature"
+                value="neutral"
+              />
+              <br />
+              <label for="cool">Cool</label>
+              <input type="radio" id="cool" name="temperature" value="cool" />
+              <br /><br />
+              <button type="submit">Create the Palette</button>
+            </div>
+          </fieldset>
+
+          <div id="palette history">
+            <h3 id="history">Palette</h3>
+          </div>
+        </form>
+      </div>
     </body>
+    <script type="module" src="./src/main.js"></script>
   </main>
-  <body>
-    <script src="./src/main.js"></script>
-  </body>
+  <body></body>
 </html>

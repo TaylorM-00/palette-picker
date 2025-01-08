@@ -1,4 +1,4 @@
-#project-palette-picker {
-  display: grid;
-  grid-template-columns: auto;
+#palette-project {
+  display: flexbox;
+  grid-template-rows: auto;
 }
